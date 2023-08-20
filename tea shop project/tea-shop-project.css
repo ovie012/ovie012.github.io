@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+/*1.HEADER 
+==================================================*/
+header {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    z-index: 5;
+}
+
+.heading {
+    width: 47%;
+    display: inline-flex;
+    justify-content: flex-start;
+   
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 9px;
+    padding: 0;
+    max-height: 50px;
+}
+
+.heading h1 {
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+}
+
+.little {
+    display: inline-flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: 47%;
+    margin-left: 30px;
+}
+
+.little p {
+    margin: 0px 5px;
+    display: inline-block;
+    text-align: right;
+    text-decoration: underline;
+}
+
+/* mission section
+===================================*/
+
+div.mission {
+    height: 650px;
+    width: 90%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(./img-mission-background.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    top: 60px;
+}
+
+div.inner-mission {
+    background-color: black;
+    max-height: 100px;
+    padding: 0;
+}
+
+.inner-mission h2 {
+    margin: 0px 0px 10px;
+}
+
+.inner-mission h4 {
+    margin: 10px 10px 5px;
+}
+
+/* Month section
+==============================*/
+
+div.month {
+    position: relative;
+    top: 150px;
+    left: 10%;
+    width: 80%;
+}
+
+.inner-month-2 {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    height: 130px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+/* Location section
+=====================================*/
+.location {
+    height: 500px;
+    width: 90%;
+    position: relative;
+    top: 170px;
+    left: 5%;
+    background-image: url(./img-locations-background.jpg);
+    background-position: 100% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.location-head h2 {
+    margin-bottom: 10px;
+}
+
+.location-boxes {
+   width: 100%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.location-box {
+    width: 100%;
+    margin: 0px 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.location-box-in {
+    background-color: black;
+    margin: 0px 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 200px;
+    width: 250px;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+/* Footer section
+==================================*/
+footer {
+    position: relative;
+    top: 170px;
+}
+
+.heads {
+    height: 200px;
+}
+
+.heads-2 {
+    text-align: left;
+    margin-left: 15px;
+}
