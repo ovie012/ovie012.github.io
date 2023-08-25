@@ -423,6 +423,8 @@ nav {
     font-size: 14px;
     font-weight: 900;
     margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .about-project p {
