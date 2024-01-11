@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>9th Challenge || Interactive Card Design</title>
+</head>
+<body>
+    <div class="container">
+        <div class="empty">
+            <div class="front-card cards">
+                <div class="inner">
+                    <div class="circle">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="num">
+                        <span class="span-num span-num-1">0000</span>&nbsp; 
+                        <span class="span-num span-num-2">0000</span>&nbsp; 
+                        <span class="span-num span-num-3">0000</span>&nbsp; 
+                        <span class="span-num span-num-4">0000</span>
+                    </div>
+                    <div class="below">
+                        <p class="front-card-name">Jane Appleseed</p>
+                        <h6><span class="month">00</span>/<span class="year">00</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="back-card cards">
+                <p class="back-card-num">000</p>
+            </div>
+        </div>
+        <div class="filled">
+            <div class="card form-card">
+                <form class="top form">
+                    <h5>CARDHOLDER NAME</h5>
+                    <input class="card-name" type="text" placeholder="e.g. Jane Appleseed">
+                    <p class="top-errors blank-error blank-error-name errors">Can't be blank</p>
+                    <p class=" top-errors wrong-format wrong-format-name errors">Wrong format, texts only</p>
+                </form>
+                <form class="middle form">
+                    <h5>card number</h5>
+                    <input class="card-number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+                    <p class="middle-errors blank-error blank-error-num errors">Can't be blank</p>
+                    <p class="middle-errors wrong-format wrong-format-num errors">Wrong format, numbers only</p>
+                    <p class="middle-errors small-length errors">It must be 16 digits</p>
+                </form>
+                <form class="last form">
+                    <div class="month-year">
+                        <h5>exp. date (mm/yy)</h5>
+                        <div class="inputs">
+                            <input class="card-month" type="number" placeholder="MM">
+                            <input class="card-year" type="number" placeholder="YY">
+                        </div>
+                        <p class="errors blank-error blank-error-date">Can't be blank</p>
+                        <p class="errors twelve-error">Month can't be greater than 12 or less than 1</p>
+                        <p class="errors length-errors">Input must be 2 values</p>
+                        <p class="errors year-validation">Must be within 3 years</p>
+                    </div>
+                    <div class="cvc">
+                        <h5>CVC</h5>
+                        <input class="cvc-number" type="number" placeholder="e.g. 123">
+                        <p class="errors blank-error blank-error-cvc">Can't be blank</p>
+                        <p class="errors cvc-length">Must be 3 digits</p>
+                    </div>
+                </form>
+                <button class="submit">Confirm</button>
+            </div>
+            <div class="card submitted-card dismiss">
+                <div class="tick">
+                    <img src="./images/icon-complete.svg" alt="done">
+                </div>
+                <h1>thank you!</h1>
+                <p>We've added your card details</p>
+                <button class="dismisser">Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

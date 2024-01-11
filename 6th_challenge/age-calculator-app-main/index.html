@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./style.css" rel="stylesheet">
+    <script src="./script.js" defer></script><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th Challenge || Age Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="date">
+                <form action="./my_index.html" method="post">
+                    <div class="day-dates dates">
+                        <h6 class="day">day</h6>
+                        <input class="input input-day" type="number" name="day" id="day" placeholder="DD">
+                        <p class="empty-day">This field is required</p>
+                        <span class="invalid-day">Must be a valid day</span>
+                    </div>
+                    <div class="month-dates dates">
+                        <h6 class="month">month</h6>
+                        <input class="input input-month" type="number" name="month" id="month" placeholder="MM">
+                        <p class="empty-month">This field is required</p>
+                        <span class="invalid-month">Must be a valid month</span>
+                    </div>
+                    <div class="year-dates dates">
+                        <h6 class="year">year</h6>
+                        <input class="input input-year" type="number" name="year" id="year" placeholder="YYYY">
+                        <p class="empty-year">This field is required</p>
+                        <span class="invalid-year">Must be in the past</span>
+                    </div>
+                </form>
+            </div>
+            <div class="click">
+                <span></span>
+                <button class="img">
+                    <img src="./assets/images/icon-arrow.svg" alt="click me">
+                </button>
+            </div>
+            <div class="date-displayed">
+                <h1><span class="display-year calc">- -</span>&nbsp;years</h1>
+                <h1><span class="display-month calc">- -</span>&nbsp;months</h1>
+                <h1><span class="display-day calc">- -</span>&nbsp;days</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
