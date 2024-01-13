@@ -55,3 +55,11 @@ function navClicked() {
 };
 
 navClick.addEventListener('click', navClicked);
+
+const animation = document.querySelector('.second-div');
+
+function animate () {
+    animation.classList.add('active');
+};
+
+window.addEventListener('load', animate);
