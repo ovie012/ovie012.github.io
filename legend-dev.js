@@ -63,3 +63,14 @@ function animate () {
 };
 
 window.addEventListener('load', animate);
+
+
+
+// loader
+const loader = document.querySelector('.lazy-loader')
+
+function lazyLoader () {
+    loader.classList.add('start');
+};
+
+window.addEventListener('load', lazyLoader);
