@@ -164,3 +164,14 @@ window.addEventListener('load', () => {
     initSlider('.carousel-collection-3 .carousel-3', '.carousel-collection-3 .slide-button-3', '.slider-scrollbar-3', '.scrollbar-thumb-3');
     initSlider('.carousel-collection-4 .carousel-4', '.carousel-collection-4 .slide-button-4', '.slider-scrollbar-4', '.scrollbar-thumb-4');
 });
+
+
+
+// loader
+const loader = document.querySelector('.lazy-loader')
+
+function lazyLoader () {
+    loader.classList.add('start');
+};
+
+window.addEventListener('load', lazyLoader);
